@@ -43,7 +43,10 @@
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 #endif
 
-
+#ifndef __CORTEX_SC 
+#define __CORTEX_SC 0
+#endif
+ 
 /* ###########################  Core Function Access  ########################### */
 /** \ingroup  CMSIS_Core_FunctionInterface
     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
