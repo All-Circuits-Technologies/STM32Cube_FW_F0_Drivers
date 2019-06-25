@@ -32,7 +32,7 @@ C_SRC += \
 S_SRC += \
     $(LIB_STM32_TEMPLATES_DIR)/$(COMPILER)/startup_$(DEVICE_IC_LOWER).s \
 
-CFLAGS +=-D$(FAMILLY_UPPER)=1
+CFLAGS += -D$(FAMILLY_UPPER)=1
 CFLAGS += -mcpu=cortex-m0
 CFLAGS += -mthumb 
 CFLAGS += -D$(DEVICE_IC)=1 
